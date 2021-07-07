@@ -33,7 +33,7 @@ class Productos(models.Model):
     categoria = models.ForeignKey(Categorias, related_name='productos', on_delete=models.CASCADE)
     titulo = models.CharField(max_length=200, db_index=True)
     sku = models.SlugField(max_length=200, db_index=True)
-    imagen = models.ImageField(upload_to='shop/static/media/productos', blank=True)
+    imagen = models.ImageField(upload_to='productos', blank=True)
     descripcion = models.TextField(blank=True)
     precio = models.DecimalField(max_digits=10, decimal_places=2)
     cantidad = models.PositiveIntegerField(default=0)

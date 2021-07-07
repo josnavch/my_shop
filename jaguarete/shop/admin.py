@@ -17,6 +17,7 @@ class ProductosAdmin(admin.ModelAdmin):
     list_display = ['titulo', 'sku', 'precio', 'cantidad']
     list_filter = ['titulo', 'precio']
     list_editable = ['precio', 'cantidad']
+    search_fields = ['titulo']
     prepopulated_fields = {'sku': ('titulo',)}
  
  

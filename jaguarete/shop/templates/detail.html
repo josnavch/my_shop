@@ -1,4 +1,4 @@
-{% extends "shop/templates/base.html" %}
+{% extends "base.html" %}
 {% load static %}
  
 {% block title %}
@@ -7,7 +7,7 @@
  
 {% block content %}
     <div class="product-detail">
-    <img src="{% if product.imagen %}{{ product.imagen.url }}{% else %}{% static 'media/no_image.png' %}{% endif %}">
+    <img src="{% if product.imagen %}{{ product.imagen.url }}{% else %}{% static 'media/No_image_available.png' %}{% endif %}">
     <h1>{{ product.titulo }}</h1>
     <h2><a href="{{ product.category.get_absolute_url }}">{{ product.categoria }}</a></h2>
     <p class="price">${{ product.precio }}</p>
