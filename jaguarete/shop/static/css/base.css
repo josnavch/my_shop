@@ -166,3 +166,13 @@ body {
     color: #704b43;
     margin: 10px 5px;
 }
+
+.ahrefRegistrar{
+
+  color: #ed8f21;
+  font-size: 1.2rem;
+}
+.ahrefRegistrar:hover{
+  color: #704b43;
+  text-decoration: none;
+}

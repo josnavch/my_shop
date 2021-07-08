@@ -65,5 +65,6 @@ def register_page(request):
         if form.is_valid():
             form.save()
             return redirect('shop:login')
+            
     context = {'form': form}
     return render(request, 'register.html', context)
